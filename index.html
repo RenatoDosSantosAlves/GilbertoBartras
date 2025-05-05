@@ -1,120 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gilberto Bartras - Aulas & Colecionismo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gilberto Bartras - Aulas e Colecionismo</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fdfdfd;
       margin: 0;
       padding: 0;
-      color: #333;
+      font-family: Georgia, serif;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/91/Academy_of_Athens%2C_Greece.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #fff;
     }
-    header {
-      background-color: #2c3e50;
-      color: white;
-      padding: 1rem;
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       text-align: center;
     }
-    nav {
-      background-color: #34495e;
-      padding: 0.5rem;
-      text-align: center;
+
+    .content {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+      max-width: 800px;
     }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #fff;
     }
-    section {
-      padding: 2rem;
+
+    h2 {
+      font-size: 1.5em;
+      color: #ddd;
+      margin-bottom: 20px;
     }
-    .card {
-      background-color: #fff;
-      padding: 1.5rem;
-      margin: 1rem 0;
-      border: 1px solid #ddd;
-      border-radius: 8px;
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin-bottom: 20px;
     }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    li::before {
+      content: "✓ ";
+      color: #ffd700;
+    }
+
+    li {
+      margin-bottom: 8px;
+      font-size: 1.1em;
+    }
+
     footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #ecf0f1;
-      font-size: 0.9rem;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #aaa;
     }
-    .btn {
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      background-color: #2980b9;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-      margin-top: 0.5rem;
+
+    @media (max-width: 600px) {
+      h1 { font-size: 2em; }
+      h2 { font-size: 1.2em; }
+      p, li { font-size: 1em; }
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>Gilberto Bartras</h1>
-    <p>Aulas de Idiomas • Conhecimento • Colecionismo</p>
-  </header>
-
-  <nav>
-    <a href="#idiomas">Idiomas</a>
-    <a href="#colecionismo">Colecionismo</a>
-    <a href="#contato">Contato</a>
-  </nav>
-
-  <section id="idiomas">
-    <h2>Aulas de Idiomas</h2>
-    <div class="card">
-      <p>Ofereço aulas particulares dos seguintes idiomas:</p>
+  <div class="overlay">
+    <div class="content">
+      <h1>Gilberto Bartras</h1>
+      <h2>Aulas Particulares & Itens de Colecionador</h2>
+      
+      <p><strong>Idiomas oferecidos:</strong></p>
       <ul>
         <li>Latim</li>
-        <li>Grego</li>
         <li>Inglês</li>
-        <li>Francês</li>
         <li>Russo</li>
+        <li>Francês</li>
         <li>Alemão</li>
-        <li>Italiano</li>
         <li>Espanhol</li>
+        <li>Italiano</li>
+        <li>Grego</li>
       </ul>
-      <p>Atendimento online e personalizado. Material incluso.</p>
-      <a href="#contato" class="btn">Agende uma Aula</a>
+
+      <p>
+        Também atuo na venda de <strong>livros raros</strong>, <strong>moedas antigas</strong> e outros <strong>itens de colecionador</strong>.
+      </p>
+
+      <p>
+        O objetivo desta página é divulgar meu trabalho com educação clássica e facilitar o acesso aos itens disponíveis para venda.
+      </p>
+
+      <footer>
+        &copy; 2025 Gilberto Bartras. Todos os direitos reservados.
+      </footer>
     </div>
-  </section>
-
-  <section id="colecionismo">
-    <h2>Livros & Moedas Raras</h2>
-    <div class="card">
-      <p>Venda de itens de colecionador:</p>
-      <ul>
-        <li>Livros raros e antigos</li>
-        <li>Moedas históricas</li>
-        <li>Manuscritos e edições especiais</li>
-      </ul>
-      <p>Entre em contato para ver o catálogo completo ou fazer uma avaliação.</p>
-      <a href="#contato" class="btn">Fale Comigo</a>
-    </div>
-  </section>
-
-  <section id="contato">
-    <h2>Contato</h2>
-    <div class="card">
-      <p>Interessado em aulas ou itens de coleção?</p>
-      <p><strong>Entre em contato:</strong></p>
-      <p>Email: <a href="mailto:gilbertobartras@gmail.com">gilbertobartras@gmail.com</a></p>
-      <p>Facebook: <a href="https://www.facebook.com/gilberto.bartras" target="_blank">Gilberto Bartras</a></p>
-    </div>
-  </section>
-
-  <footer>
-    &copy; 2025 Gilberto Bartras. Todos os direitos reservados.
-  </footer>
-
+  </div>
 </body>
 </html>
